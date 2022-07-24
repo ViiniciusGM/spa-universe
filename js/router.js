@@ -13,6 +13,7 @@ export class Router {
     this.handle()
   }
 
+
   handle(){ 
     const { pathname } = window.location 
     const route = this.routes[pathname]
