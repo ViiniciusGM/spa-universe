@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  min-height: 100vh;
+  overflow: hidden;
+
+  display: grid;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+a, h1{
+  color: white;
+}
+
+nav{
+  align-self: flex-start;
+
+  margin: 4rem 0 0 7.2rem;
+
+  display: flex;
+  gap: 3.2rem;
+
+  animation: upDown 400ms;
+}
+
+ul{ 
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.2rem;
+  color: #C4C4CC;
+}
+
+a:hover{
+  color: white;
+}
+
+ul, li, a  {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.6rem;
+
+  margin-top: -15vh;
+  animation: downUp 400ms;
+  animation-fill-mode: backwards;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6rem;
+
+  align-self: center;
+  justify-self: center;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+
+button{
+  width: fit-content;
+  text-transform: uppercase;
+  padding: 1.2rem 3.2rem;
+  color: white;
+  background-color: transparent;
+  border-radius: .5rem;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.1);
+  transition-duration: 300ms;
+  border: 2px dashed #fff;
+}
+
+.secundaria {
+  margin-left: 10.2rem;
+}
+
+.secundaria p{
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+
+  width: 64.8rem;
+  color: white;
+}
+
+@keyframes upDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }  
+}
